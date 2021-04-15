@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER</title>
+    <script src="countdown.js"></script>
+</head>
+
+<body>
+    <h1>WE'RE ARE LAUNCHING SOON</h1>
+    <div id="timer"></div>
+    <div class="timerContainer">
+        <div id="day" class="time"></div>
+
+        <div id="hour" class="time"></div>
+        <div id="minute" class="time"></div>
+        <div id="seconds" class="time"></div>
+    </div>
+    <div id="expired"></div>
+    <div id="timeIndicator">
+        <p>Day</p>
+        <p>Hour</p>
+        <p>Minute</p>
+        <p>Second</p>
+    </div>
+</body>
+<style>
+    body {
+        background: rgb(37, 4, 37)
+    }
+    
+    h1 {
+        text-align: center;
+        font-weight: 500;
+        color: white;
+        margin-top: 10%
+    }
+    
+    .timerContainer {
+        font-size: 70px;
+        border: 2px solid thin;
+        color: black;
+        width: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto
+    }
+    
+    #timeIndicator {
+        /* position: absolute;
+        top: 200;
+        left: 30% */
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto
+    }
+    
+    #timeIndicator p {
+        margin-left: 2em;
+        margin-right: 2em;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: hsl(236, 21%, 26%)
+    }
+    
+    .time {
+        padding: 5px;
+        margin: 0.3em;
+        background: hsl(236, 21%, 26%);
+        font-weight: 700;
+        color: hsl(345, 95%, 68%)
+    }
+    
+    #day {
+        padding: 5px 10px;
+    }
+    
+    #hour {
+        padding: 7px 14px
+    }
+    
+    #minute {
+        padding: 5px 10px
+    }
+    
+    #seconds {
+        padding: 7px 14px
+    }
+</style>
+
+</html>
